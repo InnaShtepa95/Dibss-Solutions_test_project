@@ -1,0 +1,30 @@
+/**********************gamburger*****************************/
+.navbar-right {
+  float: left !important; }
+
+.navbar-brand {
+  margin: 27px 0;
+  height: auto; }
+  .navbar-brand img {
+    width: 50%;
+    height: 50%; }
+
+.navbar-default {
+  background-color: #0f89f4;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0; }
+
+.navbar-default .navbar-nav li a {
+  margin: 44px 33px 0px 0px;
+  padding: 0 0 8px;
+  font-size: 16px;
+  color: white; }
+
+.navbar-nav {
+  margin: 7.5px 15px; }
+
+/***********************************/
+
+/*# sourceMappingURL=style.css.map */
