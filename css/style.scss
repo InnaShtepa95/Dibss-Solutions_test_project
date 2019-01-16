@@ -127,32 +127,34 @@ body {
   padding: 0;
 
   header {
-    color: white;
-    .container-fluid {
-      background-color: #0f89f4;
-      .container {
-        .row {
-          .col-md-6 {
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
-          /**************/
-          .col-md-12 {
-            padding-top: 50px;
-            padding-bottom: 60px;
-            text-align: center;
-            span {
-              color: #95c9fb;
-
-              font-size: 15px;
-            }
-            a {
-              margin-left: 34px;
-              text-decoration: none;
+    .main_information {
+      color: white;
+      .container-fluid {
+        background-color: #0f89f4;
+        .container {
+          .row {
+            .col-md-6 {
               img {
-                height: 37px;
+                width: 100%;
+                height: 100%;
+              }
+            }
+            /**************/
+            .col-md-12 {
+              padding-top: 50px;
+              padding-bottom: 60px;
+              text-align: center;
+              span {
+                color: #95c9fb;
+
+                font-size: 15px;
+              }
+              a {
+                margin-left: 34px;
+                text-decoration: none;
+                img {
+                  height: 37px;
+                }
               }
             }
           }
@@ -161,9 +163,11 @@ body {
     }
   }
   section {
-
-    .container-fluid { /***owl***/
-
+    .carousel {
+      .container-fluid {
+      }
+    }
+    .description {
       .container {
         .delivery {
 
@@ -266,7 +270,6 @@ body {
         }
 
       }
-
     }
     .large_selection_of_shakers {
       .container-fluid {
@@ -288,6 +291,7 @@ body {
       }
     }
   }
+
   footer {
     .container {
       .row {
@@ -352,7 +356,6 @@ body {
             i {
               padding-right: 6px;
 
-
             }
             span {
               font-weight: bold;
@@ -361,10 +364,9 @@ body {
                 font-weight: normal;
               }
 
-
             }
           }
-          p{
+          p {
             color: black;
             font-size: 12px;
             display: inline-block;
@@ -374,4 +376,5 @@ body {
       }
     }
   }
+
 }
