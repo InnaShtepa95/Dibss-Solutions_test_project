@@ -41,6 +41,33 @@
 .navbar-nav {
   margin: 7.5px 15px; }
 
+/************owl********************/
+.owl-theme .owl-nav {
+  margin-top: 0;
+  top: 150px; }
+
+.owl-theme .owl-dots .owl-dot {
+  display: none; }
+
+.owl-carousel .owl-stage-outer {
+  overflow: initial;
+  position: initial; }
+
+.owl-theme .owl-nav .owl-prev {
+  background-color: green;
+  position: absolute;
+  top: 150px;
+  left: -50px; }
+
+.owl-theme .owl-nav .owl-next {
+  top: 150px;
+  background-color: grey;
+  position: absolute;
+  right: -50px; }
+
+.owl-item {
+  border: solid 1px black; }
+
 /***********************************/
 .label_and_button h1 {
   margin-top: 85px;
@@ -96,6 +123,20 @@ body {
             text-decoration: none; }
             body header .main_information .container-fluid .container .row .col-md-12 a img {
               height: 37px; }
+  body section .carousel .container-fluid {
+    position: relative; }
+    body section .carousel .container-fluid .container .row .col-md-12 .owl-carousel .shaker {
+      padding-bottom: 30px; }
+      body section .carousel .container-fluid .container .row .col-md-12 .owl-carousel .shaker h3 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        color: #4266b3;
+        font-size: 20px; }
+      body section .carousel .container-fluid .container .row .col-md-12 .owl-carousel .shaker img {
+        margin: auto;
+        height: 190px;
+        width: 95px; }
   body section .description .container .delivery .col-md-12 h4 {
     line-height: 50px;
     margin-top: 50px;
