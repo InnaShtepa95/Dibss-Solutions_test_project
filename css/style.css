@@ -122,18 +122,29 @@ body {
         color: #315479; }
     body section .container-fluid .container .reviews .col-md-4 .blue_block {
       position: relative;
-      padding: 44px 40px 40px 40px;
+      padding: 44px 40px 40px 60px;
       background-color: #158af4;
       color: white;
       border-radius: 5px; }
+      body section .container-fluid .container .reviews .col-md-4 .blue_block img {
+        height: 20px;
+        width: 25px;
+        position: absolute;
+        top: 32px;
+        left: 25px; }
       body section .container-fluid .container .reviews .col-md-4 .blue_block p {
         line-height: 25px;
         font-size: 17px; }
-        body section .container-fluid .container .reviews .col-md-4 .blue_block p:before {
-          display: inline-block;
-          content: open-quote;
-          clear: both;
-          top: 0;
-          position: absolute; }
+    body section .container-fluid .container .reviews .col-md-4:after {
+      display: block;
+      clear: both;
+      content: "";
+      height: 24px;
+      width: 34px;
+      transform: rotate(-30deg);
+      background-color: #158af4;
+      position: absolute;
+      left: 40px;
+      bottom: -10px; }
 
 /*# sourceMappingURL=style.css.map */
