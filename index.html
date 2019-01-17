@@ -15,13 +15,36 @@
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <!-- Latest compiled and minified JavaScript -->
-       <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/jquery-2.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/script.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                openEffect: 'none',
+                closeEffect: 'none'
+            });
+            $(".fancybox-thumb").fancybox({
+                prevEffect: 'none',
+                nextEffect: 'none',
+                helpers: {
+                    title: {type: 'outside'},
+                    thumbs: {width: 50, height: 50}
+                }
+            });
+        });
+    </script>
+
 
 </head>
 <body>
@@ -110,9 +133,6 @@
 <section>
     <div class="carousel">
         <div class="container-fluid">
-           <!-- <div class="prev">
-                <i class="fas fa-angle-double-left"></i>
-            </div>-->
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 ">
@@ -121,25 +141,34 @@
                                 <h3>
                                     zen
                                 </h3>
-                                <img src="images/bottle.png">
+                                <a class="fancybox-thumb" title="Shaker_1" href="images/bottle.png"
+                                   rel="fancybox-thumb"><img
+                                        src="images/bottle.png" alt="Shaker_1"/></a>
+
                             </div>
                             <div class="shaker">
                                 <h3>
                                     fsf
                                 </h3>
-                                <img src="images/shaker.png">
+                                <a class="fancybox-thumb" title="Shaker_2" href="images/shaker.png"
+                                   rel="fancybox-thumb"><img src="images/shaker.png" alt="Shaker_2"/></a>
+
                             </div>
                             <div class="shaker">
                                 <h3>
                                     zen
                                 </h3>
-                                <img src="images/bottle.png">
+                                <a class="fancybox-thumb" title="Shaker_1" href="images/bottle.png"
+                                   rel="fancybox-thumb"><img
+                                        src="images/bottle.png" alt="Shaker_1"/></a>
                             </div>
                             <div class="shaker">
                                 <h3>
                                     zen
                                 </h3>
-                                <img src="images/bottle.png">
+                                <a class="fancybox-thumb" title="Shaker_1" href="images/bottle.png"
+                                   rel="fancybox-thumb"><img
+                                        src="images/bottle.png" alt="Shaker_1"/></a>
                             </div>
 
 
@@ -330,6 +359,7 @@
 
         </div>
     </div>
+
 </footer>
 
 </body>
