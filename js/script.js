@@ -33,10 +33,10 @@ $(document).ready(function () {
                 '<i class="fas fa-angle-double-right" aria-hidden="true"></i>'],
             responsive: {
                 0:{
-                    items:4
+                    items:2
                 },
-                600:{
-                    items:4
+                992:{
+                    items:3
                 },
                 1000:{
                     items:4

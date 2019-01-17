@@ -27,6 +27,7 @@
   url('../fonts/OpenSansBold.ttf') format('truetype'),
   url('../fonts/OpenSansBold.svg#OpenSansBold') format('svg');
 }
+
 @font-face {
   font-family: 'OpenSansExtraBold';
   src: url('../fonts/OpenSansExtraBold.eot');
@@ -37,6 +38,11 @@
   url('../fonts/OpenSansExtraBold.svg#OpenSansExtraBold') format('svg');
 }
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 
 /**********************gamburger*****************************/
 .navbar {
@@ -105,6 +111,7 @@
   position: absolute;
   top: 130px;
   left: -50px;
+
   i {
     color: #0e88f3;
     font-size: 30px;
@@ -117,6 +124,7 @@
   background-color: transparent;
   position: absolute;
   right: -50px;
+
   i {
     color: #0e88f3;
     font-size: 30px;
@@ -126,13 +134,9 @@
 
 .owl-carousel.owl-loaded {
   border-right: solid 1px #1e91f7;
-  border-left: transparent;
-  border-bottom: transparent;
-  border-top: transparent;
 }
 
-.owl-item {
-
+.owl-item.active {
   border-left: solid 1px #1e91f7;
 }
 
@@ -140,6 +144,17 @@
 .label_and_button {
 
   h1 {
+    @include max-screen(768px){
+      padding-top: 30px;
+      max-width: none;
+    }
+    max-width: 800px;
+    margin: auto;
+    @include max-screen(992px) {
+      margin-top: 0;
+
+    }
+
     margin-top: 85px;
 
     line-height: 45px;
@@ -156,7 +171,9 @@
     margin-bottom: 60px;
 
   }
+
   a {
+
     color: #95c9fb;;
     text-decoration: underline;
     i {
@@ -168,6 +185,11 @@
     margin-top: 40px;
     margin-left: 30px;
     display: block;
+    @include max-screen(667px) {
+      display: inline-block;
+      margin-bottom: 30px;
+      text-align: justify;
+    }
   }
   :nth-child(3) {
 
@@ -204,10 +226,16 @@ body {
             }
             /**************/
             .col-md-12 {
+
               padding-top: 50px;
               padding-bottom: 60px;
               text-align: center;
               span {
+                @include max-screen(667px) {
+                  display: block;
+                  text-align: center;
+                  margin-bottom: 15px;
+                }
                 color: #95c9fb;
 
                 font-size: 15px;
@@ -227,19 +255,18 @@ body {
   }
   section {
     .carousel {
+      border-bottom: solid 1px #1e91f7;
       .container-fluid {
-        hr {
-          width: 100%;
-          position: absolute;
-          background-color: #1e91f7;
-          top: 280px;
-          left: 0;
-        }
         position: relative;
 
         .container {
           .row {
+            @include max-screen(992px) {
+              margin-left: 15px;
+              margin-right: 15px;
+            }
             .col-md-12 {
+
               .owl-carousel {
                 .shaker {
 
@@ -273,7 +300,11 @@ body {
 
           .col-md-12 {
             h4 {
-
+              @include max-screen(768px){
+                max-width: none;
+              }
+              max-width: 600px;
+              margin: auto;
               line-height: 50px;
               margin-top: 50px;
               font-size: 32px;
@@ -282,13 +313,21 @@ body {
 
           }
           .col-md-6 {
+
             padding-top: 50px;
             img {
               width: 100%;
               height: 100%;
+              @include max-screen(768px) {
+                max-width: 450px;
+
+              }
 
             }
             h3 {
+              @include max-screen(768px) {
+                max-width: none;
+              }
               word-wrap: break-word;
               font-size: 21px;
               line-height: 31px;
@@ -297,6 +336,9 @@ body {
             }
             :nth-child(1) {
               color: #315479;
+              @include max-screen(768px) {
+                text-align: center;
+              }
             }
           }
           .photo {
@@ -307,6 +349,9 @@ body {
 
         }
         .reviews {
+          @include max-screen(768px) {
+            margin-bottom: 50px;
+          }
           margin-bottom: 150px;
           .col-md-12 {
             margin-top: 115px;
@@ -393,13 +438,20 @@ body {
   }
 
   footer {
+
     .container {
       .row {
         margin-bottom: 50px;
         .col-md-4 {
           padding-left: 35px;
+          @include max-screen(992px) {
+            padding-left: 15px;
+          }
           &:nth-of-type(2) {
             padding-left: 0;
+            @include max-screen(992px) {
+              padding-left: 15px;
+            }
             a {
               margin-right: initial;
             }
@@ -421,6 +473,7 @@ body {
 
           }
           a {
+            word-wrap: break-word;
             display: inline-block;
             text-decoration: none;
             margin-right: 17px;
@@ -471,6 +524,10 @@ body {
             font-size: 12px;
             display: inline-block;
             margin-left: 17px;
+            @include max-screen(667px){
+              margin-left: 0;
+              margin-top: 15px;
+            }
           }
         }
       }

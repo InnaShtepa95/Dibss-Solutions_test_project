@@ -75,19 +75,25 @@
     font-size: 30px; }
 
 .owl-carousel.owl-loaded {
-  border-right: solid 1px #1e91f7;
-  border-left: transparent;
-  border-bottom: transparent;
-  border-top: transparent; }
+  border-right: solid 1px #1e91f7; }
 
-.owl-item {
+.owl-item.active {
   border-left: solid 1px #1e91f7; }
 
 /***********************************/
 .label_and_button h1 {
+  max-width: 800px;
+  margin: auto;
   margin-top: 85px;
   line-height: 45px;
   font-size: 36px; }
+  @media screen and (max-width: 768px) {
+    .label_and_button h1 {
+      padding-top: 30px;
+      max-width: none; } }
+  @media screen and (max-width: 992px) {
+    .label_and_button h1 {
+      margin-top: 0; } }
 .label_and_button h4 {
   margin-top: 20px;
   color: #d2e7fb;
@@ -103,6 +109,11 @@
   margin-top: 40px;
   margin-left: 30px;
   display: block; }
+  @media screen and (max-width: 667px) {
+    .label_and_button :nth-child(4) {
+      display: inline-block;
+      margin-bottom: 30px;
+      text-align: justify; } }
 .label_and_button :nth-child(3) {
   text-decoration: none;
   font-family: 'OpenSansSemibold';
@@ -133,54 +144,76 @@ body {
           body header .main_information .container-fluid .container .row .col-md-12 span {
             color: #95c9fb;
             font-size: 15px; }
+            @media screen and (max-width: 667px) {
+              body header .main_information .container-fluid .container .row .col-md-12 span {
+                display: block;
+                text-align: center;
+                margin-bottom: 15px; } }
           body header .main_information .container-fluid .container .row .col-md-12 a {
             margin-left: 34px;
             text-decoration: none; }
             body header .main_information .container-fluid .container .row .col-md-12 a img {
               height: 37px; }
-  body section .carousel .container-fluid {
-    position: relative; }
-    body section .carousel .container-fluid hr {
-      width: 100%;
-      position: absolute;
-      background-color: #1e91f7;
-      top: 280px;
-      left: 0; }
-    body section .carousel .container-fluid .container .row .col-md-12 .owl-carousel .shaker {
-      padding-bottom: 30px; }
-      body section .carousel .container-fluid .container .row .col-md-12 .owl-carousel .shaker h3 {
-        font-family: 'OpenSansExtraBold';
-        margin-top: 30px;
-        margin-bottom: 30px;
-        text-transform: uppercase;
-        color: #315479;
-        font-size: 20px; }
-      body section .carousel .container-fluid .container .row .col-md-12 .owl-carousel .shaker img {
-        margin: auto;
-        height: 190px;
-        width: 95px; }
+  body section .carousel {
+    border-bottom: solid 1px #1e91f7; }
+    body section .carousel .container-fluid {
+      position: relative; }
+      @media screen and (max-width: 992px) {
+        body section .carousel .container-fluid .container .row {
+          margin-left: 15px;
+          margin-right: 15px; } }
+      body section .carousel .container-fluid .container .row .col-md-12 .owl-carousel .shaker {
+        padding-bottom: 30px; }
+        body section .carousel .container-fluid .container .row .col-md-12 .owl-carousel .shaker h3 {
+          font-family: 'OpenSansExtraBold';
+          margin-top: 30px;
+          margin-bottom: 30px;
+          text-transform: uppercase;
+          color: #315479;
+          font-size: 20px; }
+        body section .carousel .container-fluid .container .row .col-md-12 .owl-carousel .shaker img {
+          margin: auto;
+          height: 190px;
+          width: 95px; }
   body section .description .container .delivery .col-md-12 h4 {
+    max-width: 600px;
+    margin: auto;
     line-height: 50px;
     margin-top: 50px;
     font-size: 32px;
     color: #315479; }
+    @media screen and (max-width: 768px) {
+      body section .description .container .delivery .col-md-12 h4 {
+        max-width: none; } }
   body section .description .container .delivery .col-md-6 {
     padding-top: 50px; }
     body section .description .container .delivery .col-md-6 img {
       width: 100%;
       height: 100%; }
+      @media screen and (max-width: 768px) {
+        body section .description .container .delivery .col-md-6 img {
+          max-width: 450px; } }
     body section .description .container .delivery .col-md-6 h3 {
       word-wrap: break-word;
       font-size: 21px;
       line-height: 31px;
       max-width: 450px;
       color: #677482; }
+      @media screen and (max-width: 768px) {
+        body section .description .container .delivery .col-md-6 h3 {
+          max-width: none; } }
     body section .description .container .delivery .col-md-6 :nth-child(1) {
       color: #315479; }
+      @media screen and (max-width: 768px) {
+        body section .description .container .delivery .col-md-6 :nth-child(1) {
+          text-align: center; } }
   body section .description .container .delivery .photo img {
     max-width: 450px; }
   body section .description .container .reviews {
     margin-bottom: 150px; }
+    @media screen and (max-width: 768px) {
+      body section .description .container .reviews {
+        margin-bottom: 50px; } }
     body section .description .container .reviews .col-md-12 {
       margin-top: 115px;
       margin-bottom: 75px; }
@@ -232,8 +265,14 @@ body {
     margin-bottom: 50px; }
     body footer .container .row .col-md-4 {
       padding-left: 35px; }
+      @media screen and (max-width: 992px) {
+        body footer .container .row .col-md-4 {
+          padding-left: 15px; } }
       body footer .container .row .col-md-4:nth-of-type(2) {
         padding-left: 0; }
+        @media screen and (max-width: 992px) {
+          body footer .container .row .col-md-4:nth-of-type(2) {
+            padding-left: 15px; } }
         body footer .container .row .col-md-4:nth-of-type(2) a {
           margin-right: initial; }
       body footer .container .row .col-md-4 h4 {
@@ -248,6 +287,7 @@ body {
         line-height: 18px;
         color: #323232; }
       body footer .container .row .col-md-4 a {
+        word-wrap: break-word;
         display: inline-block;
         text-decoration: none;
         margin-right: 17px; }
@@ -282,5 +322,9 @@ body {
       font-size: 12px;
       display: inline-block;
       margin-left: 17px; }
+      @media screen and (max-width: 667px) {
+        body footer .container .footer_description .col-md-12 p {
+          margin-left: 0;
+          margin-top: 15px; } }
 
 /*# sourceMappingURL=style.css.map */
