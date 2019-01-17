@@ -124,7 +124,20 @@ body {
             body header .main_information .container-fluid .container .row .col-md-12 a img {
               height: 37px; }
   body section .carousel .container-fluid {
-    position: relative; }
+    position: relative;
+       /* .prev{
+          position: absolute;
+          z-index: 1;
+          background-color: #e58415;
+          width: 100px;
+          height: 350px;
+          top: 0;
+          left: -10px;
+
+          i{
+
+          }
+        }*/ }
     body section .carousel .container-fluid .container .row .col-md-12 .owl-carousel .shaker {
       padding-bottom: 30px; }
       body section .carousel .container-fluid .container .row .col-md-12 .owl-carousel .shaker h3 {
